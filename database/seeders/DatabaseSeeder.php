@@ -18,8 +18,13 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+            'name' => 'CEO Credit Sales',
+            'email' => 'mromerop@mrpsistemas.com',
+            'password' => bcrypt('69Mh75Dm01Se06Ma'),
+            'role' => 'CEO',
+            'avatar' => 'user_41.png',
+            'phone' => '3152579805',
+            'logo' => 'logomrpsistemas.png',
         ]);
     }
 }
